@@ -641,9 +641,10 @@ a.up-bg:hover {color: #e44763;}
 
 .copyright {
     margin-bottom: 0;
-    line-height: 40px;
+    line-height: 15px;
     color: #fff;
     text-align: center;
+    font-size: 10px;
 }
 
 /***************** WAVES *************************/
