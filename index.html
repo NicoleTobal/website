@@ -15,7 +15,7 @@
 
     <!-- Mobile Specific Metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- Fonts -->
@@ -44,7 +44,7 @@
 </head>
 <body>
 
-    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: #161435; padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
+    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: #161435; padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);" data-top-bottom="background: #161435; padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
         <nav id="primary-navigation" class="site-navigation">
             <div class="container">
 
@@ -79,7 +79,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-6">
+                <div class="col-md-6 moving-lines">
                     <h1>Nicole Tobal</h1>
                     <div class="page-scroll">
                         <p class="job-title">Software Engineer</p>
@@ -120,30 +120,6 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="skill">
-                            <h4>Html/css</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill">
-                            <h4>Javascript</h4>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
-                            </div><!-- /.progress -->
-                        </div><!-- /.skill -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="skill">
-                          <h4>jQuery</h4>
-                          <div class="progress">
-                              <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
-                          </div><!-- /.progress -->
-                      </div><!-- /.skill -->
-                    </div>
-                    <div class="col-md-4">
                       <div class="skill">
                           <h4>React</h4>
                           <div class="progress">
@@ -160,10 +136,42 @@
                         </div><!-- /.skill -->
                     </div>
                     <div class="col-md-4">
+                      <div class="skill">
+                          <h4>Docker</h4>
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
+                          </div><!-- /.progress -->
+                      </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Html/css</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <h4>Javascript</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div><!-- /.progress-bar -->
+                            </div><!-- /.progress -->
+                        </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
+                      <div class="skill">
+                          <h4>jQuery</h4>
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
+                          </div><!-- /.progress -->
+                      </div><!-- /.skill -->
+                    </div>
+                    <div class="col-md-4">
                         <div class="skill">
                             <h4>MongoDB</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                     </div>
@@ -174,14 +182,6 @@
                                 <div class="progress-bar" role="progressbar" data-transitiongoal="80"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="skill">
-                          <h4>Docker</h4>
-                          <div class="progress">
-                              <div class="progress-bar" role="progressbar" data-transitiongoal="100"></div><!-- /.progress-bar -->
-                          </div><!-- /.progress -->
-                      </div><!-- /.skill -->
                     </div>
                     <div class="col-md-4">
                       <div class="skill">
@@ -307,6 +307,22 @@
 
     </main><!-- /#main -->
 
+     <!--Waves Container-->
+     <div class="waves-container">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="#e4476382" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="#e4476382" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#2a2e679e" />
+        </g>
+        </svg>
+    </div>
+    <!--Waves end-->
     <footer id="colophon" class="site-footer">
         <div class="container">
             <div class="row">
@@ -331,6 +347,22 @@
           <div class="modal-header">
             <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
             <img class="img-res" src="assets/img/food-delivery.png" alt="">
+             <!--Waves Container-->
+             <div class="waves-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#2a2e679e" />
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Food delivery</h4>
@@ -349,6 +381,22 @@
           <div class="modal-header">
             <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
             <img class="img-res" src="assets/img/wallet.png" alt="">
+             <!--Waves Container-->
+            <div class="waves-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#2a2e679e" />
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Check balance</h4>
@@ -367,6 +415,22 @@
           <div class="modal-header">
             <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
             <img class="img-res" src="./assets/img/cinema.png" alt="">
+             <!--Waves Container-->
+             <div class="waves-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#2a2e679e" />
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
           </div>
           <div class="modal-body">
             <h4 class="modal-title">Movie API rest</h4>
@@ -385,6 +449,22 @@
           <div class="modal-header">
             <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
             <img class="img-res" src="./assets/img/stablepay-logo.svg" alt="">
+             <!--Waves Container-->
+             <div class="waves-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#2a2e679e" />
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
           </div>
           <div class="modal-body">
             <p>While working with the StablePay team, a decentralized payment platform, I mainly developed tasks in the frontend using React and NextJs, while at the same time integrating with APIs and adding automatized tests.</p>
@@ -402,9 +482,25 @@
           <div class="modal-header">
             <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
             <img class="img-res" src="./assets/img/veinte-logotipo.png" alt="">
+             <!--Waves Container-->
+             <div class="waves-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="#e4476382" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#2a2e679e" />
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
           </div>
           <div class="modal-body">
-            <p>In Veinte, a cryptocurrency echange platform, I designed the architecture at the beginning of the project and developed the web application using ReactJs in the frontend and Nodejs in the backend with MongoDB. I used Swagger for documentation, automatized testing tools and GitlabCi for continuous integration. What is more, I developed two libraries in npm used in the project:
+            <p>In Veinte, a cryptocurrency exchange platform, I designed the architecture at the beginning of the project and developed the web application using ReactJs in the frontend and Nodejs in the backend with MongoDB. I used Swagger for documentation, automatized testing tools and GitlabCi for continuous integration. What is more, I developed two libraries in npm used in the project:
               <li><a href="https://www.npmjs.com/package/@veinte_desarrollo/amount-formatter" target="_blank" rel="noopener noreferrer">Amount formatter</a></li>
               <li><a href="https://www.npmjs.com/package/@veinte_desarrollo/coin-coverter" target="_blank" rel="noopener noreferrer">Coin converter</a></li>
             </p>
