@@ -5,4 +5,4 @@ docker build -t my-website-image .
 # Cleans old images
 docker image prune -f
 # Runs container from image
-docker run --name my-website -p 8081:80 -d my-website-image
+docker run --name my-website -p 8090:80 -d my-website-image

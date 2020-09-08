@@ -1,0 +1,6 @@
+.personalWorks a {
+  color: white;
+}
+.personalWorks a:hover {
+  color: #161435;
+}

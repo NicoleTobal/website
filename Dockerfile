@@ -1,10 +1,15 @@
+FROM node as build
+WORKDIR /app
+COPY . ./
+# Builds node_modules
+RUN npm install
+# Builds preact app
+RUN npm run build
+
 FROM nginx
-
-# Label is added to identify image version
-LABEL version="1.0"
-
-# Nginx config file is copied
+# Creates an app folder
+WORKDIR /usr/share/nginx/html/app
+# Copies configuration
 COPY nginx.conf /etc/nginx/nginx.conf
-
-# Since it is plain html no CMD command is needed, just to copy in nginx directory
-COPY . /usr/share/nginx/html
+# Copies code
+COPY --from=build /app/build/. ./

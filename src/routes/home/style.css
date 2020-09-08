@@ -1,0 +1,21 @@
+.underlined path {
+  fill: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);;
+  stroke: #ffffff;
+  stroke-width: 3px;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  
+  animation: stroke-anim 2s ease-in-out alternate infinite;
+}
+
+/* Animate the stroke offset to 0 so the line appears to be drawn in */
+@keyframes stroke-anim {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Fun trick to center the SVG in the viewport */
+.underlined {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: 0;
+}
