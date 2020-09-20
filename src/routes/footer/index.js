@@ -17,7 +17,6 @@ const Footer = () => (
             <p class="copyright">Credits:</p>
             <p class="copyright">Images: <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a> </p>
             <p class="copyright">Icons: <a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer">Flaticon</a> </p>
-            <p class="copyright">Template: <a href="https://www.free-css.com" target="_blank" rel="noopener noreferrer">Free CSS</a></p>
             <p class="copyright">Animations: <a href="https://codepen.io" target="_blank" rel="noopener noreferrer">Codepen</a> </p>
           </div>
           <div class="col-sm-4 col-xs-3">

@@ -1,6 +1,6 @@
 # My website
 
-My personal website, done with Preact.
+My personal website, done with Preact, bootstrap, babel and Docker.
 
 ## CLI Commands
 

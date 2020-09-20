@@ -375,7 +375,7 @@ html, body {
 }
 
 .progress-bar {
-    background: linear-gradient(to left, #f55482, #c8446c);
+    background: linear-gradient(to left, #f55482, #7a2e50);
     border-radius: 10px;
     transition: width .6s ease;
     -webkit-transition: width 6s;
