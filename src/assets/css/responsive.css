@@ -80,7 +80,7 @@
 	.section-portfolio,
 	.section-form {
 	    padding-bottom: 90px;
-	}
+  }
 
 	.site-section h2,
 	.site-section h3 {
@@ -105,7 +105,11 @@
 	.section-services .container {
     padding: 70px 90px;
     border-radius: 0;
-	}
+  }
+  
+  .section-services .left-border {
+    border: none;
+  }
 	
 	.service h4 {
 		font-size: 22px; 
@@ -135,8 +139,23 @@
 	}
 }
 
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+  .section-portfolio .container .col-md-4.col-xs-6 {
+    padding: 0;
+    margin: 0;
+  }
+  .section-portfolio .container .col-md-4.col-xs-6 .portfolio-item {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+  .hero {
+    width: 100%;
+  }
 	/* CUSTOM RESETS
 	================================================== */
 	h4 {
@@ -176,7 +195,9 @@
 	.navbar-toggle {
 	    margin: 0 15px 0 0;
 	    padding: 5px 0;
-	   	border: 0;
+      border: 0;
+      position: absolute;
+      display: block;
 	}
 
 	.navbar-toggle .icon-bar {
@@ -192,6 +213,10 @@
 
 	.navbar-toggle .icon-bar + .icon-bar {
 		margin-top: 6px; 
+  }
+  
+  .navbar-toggle .icon-bar + .icon-bar + .icon-bar {
+		margin-top: 12px; 
 	}
 
 	.navbar-toggle.act .icon-bar:first-child, 
@@ -242,7 +267,8 @@
 
 	.navbar-toggle.act {
 		z-index: 9999;
-		height: 25px;
+    height: 25px;
+    position: absolute;
 	}
 
 	.main-menu {
@@ -331,7 +357,12 @@
 	.section-portfolio,
 	.section-form {
 	    padding-bottom: 60px;
-	}
+  }
+  
+  .slide-container {
+    padding: 0% 14% 13%;
+    text-align: center;
+  }
 
 	.site-section h2,
 	.site-section h3 {
@@ -362,6 +393,10 @@
     top: 0;
   }
 
+  .section-services .left-border {
+    border: none;
+  }
+
 	.service h4 {
 		margin: 10px 0;
 	}
@@ -373,7 +408,12 @@
 
 	.section-portfolio .col-xs-6:nth-child(even) {
 		padding-left: 7.5px;
-	}
+  }
+  
+  .portfolio-item {
+    height: auto;
+    padding-bottom: 70px;
+  }
 
 	.portfolio-item,
 	.section-portfolio .col-md-4:nth-last-child(-n+3) .portfolio-item {
@@ -417,7 +457,16 @@
 	================================================== */
 	.site-footer .col-xs-12 {
 		text-align: center;
-	}
+  }
+  
+  .site-footer .page-scroll {
+    text-align: center;
+  }
+
+  .site-footer .col-sm-4 {
+    margin: 10px 0;
+  }
+  
 }
 
 /* Extra Small Devices, Phones */ 

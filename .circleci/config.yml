@@ -1,0 +1,19 @@
+version: 2.1
+
+jobs:
+  deploy:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - ${FINGERPRINT}
+      - run:
+          command:
+            - ssh ${USER}:${HOST} 'sudo bash deploy.sh'
+
+workflows:
+  deploy:
+    jobs:
+      - deploy-production:
+          filters:
+            branches:
+              only: master
